@@ -1,0 +1,100 @@
+/* Roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-Regular.ttf) format('woff');
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-Black.ttf) format('woff');
+    font-style: normal;
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-Italic.ttf) format('woff');
+    font-style: italic;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-Bold.ttf) format('woff');
+    font-style: normal;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-BoldItalic.ttf) format('woff');
+    font-style: italic;
+    font-weight: 700;
+  }
+
+body {
+font-family: "roboto";
+font-style: normal;
+margin: 0px;
+background-color: #ffff;
+}
+
+:root {
+    --blurple: #4363d8;
+}
+
+nav {
+    background-color: var(--blurple);
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+.nav-links {
+    width: 100%;
+}
+
+.nav-link {
+    line-height: 70px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.profile-link {
+    line-height: 70px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 25px;
+    float: right;
+    text-decoration: none;
+    color: white;
+}
+
+.blog {
+    display: block;
+    width: 500px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 28px 28px 50px #0d275033, -23px -23px 50px #0d27502c;
+}
+
+.blog-top {
+display: inline-flex;
+flex-direction: row;
+width: 100%;
+}
+
+.author {
+    float: right;
+}
+
+.blog-pfp {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
