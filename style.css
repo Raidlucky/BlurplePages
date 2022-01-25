@@ -81,6 +81,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 28px 28px 50px #0d275033, -23px -23px 50px #0d27502c;
+    margin-bottom: 100px;
 }
 
 .blog-top {
@@ -90,11 +91,113 @@ width: 100%;
 }
 
 .author {
-    float: right;
+  margin-left: auto;
+  display: inline-flex;
+}
+
+.author-name {
+  line-height: 25px;
 }
 
 .blog-pfp {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+}
+
+.recommend {
+  background-color: #333;
+  width: 100%;
+  height: 500px;
+}
+
+.people-recommend {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.person {
+  background-color: rgb(221, 214, 214);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.person-img {
+  border-radius: 50%;
+}
+
+.profiles {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: auto auto auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.profile-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #333;
+  
+}
+
+.profile {
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffff;
+  color: #333;
+  box-shadow: 28px 28px 50px #0d275033, -23px -23px 50px #0d27502c;
+}
+
+.profile-pfp {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.pname {
+  font-size: 20px;
+  margin: 40px;
+  margin-left: auto;
+}
+
+.country {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.age {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.profile-specs {
+  display: flex;
+  flex-direction: row;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: #ffffff00;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #4363d8;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(94, 91, 91);
+  outline: 1px solid slategrey;
+  border-radius: 5px;
 }
