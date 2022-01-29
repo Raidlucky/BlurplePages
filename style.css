@@ -39,6 +39,9 @@ background-color: #ffff;
 
 :root {
     --blurple: #4363d8;
+    --dark-grey: #202225;
+    --med-gray: #2f3136;
+    --grey: #36393f;
 }
 
 nav {
@@ -129,7 +132,8 @@ width: 100%;
 }
 
 .profiles {
-  width: 100%;
+  padding-left: 150px;
+  width: calc(100% - 150px);
 }
 
 .grid {
@@ -185,6 +189,73 @@ width: 100%;
 .profile-specs {
   display: flex;
   flex-direction: row;
+}
+
+sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 150px;
+  background-color: var(--med-gray);
+  height: 100%;
+}
+
+.filter {
+  width: 140px;
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+}
+
+.filter:hover .filter-check  {
+  color: #4363d8;
+  display: flex;
+}
+
+.filter-check {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  width: calc(100% - 10px);
+}
+
+.filter-txt {
+  color: white;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.checkbox {
+  margin-left: auto;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  border-top: 5px solid var(--grey);
+}
+
+.age {
+  display: flex;
+  flex-direction: row;
+}
+
+.age-input {
+  width: 35px;
+  margin-left: 5px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  background-color: #202225;
+  color: white;
+  font: "Roboto";
+  font-size: 18px;
+}
+
+.age-text {
+  color: white;
+  font-size: 20px;
 }
 
 body::-webkit-scrollbar {
